@@ -1,0 +1,101 @@
+<!--Experiment 11-->
+<!--Write JavaScript to validate the following fields of the above registration page.
+A.Name(Name should contain alphabets and the length should not be less than 6 characters).
+B.Password(Password should not be less than 6 charcters length).
+C.E-Mail id(should not contain any invalid and must follow the standard pattern name@domain.com)
+D.Phone number(Phone number should contain 10 digits only).-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validation()
+{
+let name=document.getElementById("name")
+if( name.value.length<6)
+{
+    alert('invalid name')
+}
+let pass=document.getElementById("password")
+
+if(pass.value.length<6)
+{
+    alert("invalid password")
+}
+let phone=document.getElementById("phno").value
+
+if(phone.length>10 || phone.length<10)
+{
+    if(! phone.match(/[1-9][0-9]{9}$/))
+    alert("invalid phno")
+}
+
+}
+    </script>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+
+</head>
+
+<body>
+    <h1 align="center">Registraton form</h1>
+    <form action="">
+        <table width="50%" align="center">
+            <tr>
+                <td><label for=""> Name </label></td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="">password</label></td>
+                <td><input type="password" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">E-mail Id</label>
+                </td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="">phone number</label></td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="">Gender</label></td>
+                <td> <input type="radio" name="g" id="">Male
+                    <input type="radio" name="g" id="">Female
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Languages known</label></td>
+                <td><input type="checkbox" name="l" id="">English
+                    <input type="checkbox" name="l" id="">Telugu
+                    <input type="checkbox" name="l" id="">Hindi
+                    <input type="checkbox" name="l" id="">Tamil
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Address</label></td>
+                <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" id="btn"><input type="button" value="SUBMIT"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
+</body>
+</html>

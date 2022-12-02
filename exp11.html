@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-assignment</title>
+
+    <script>
+        function validate(){
+            let n=document.getElementById("name").value
+            let l=document.getElementById("last").value
+            let e=document.getElementById("mail").value
+            let p=document.getElementById('phone').value
+            let d=document.getElementById('dob').value
+            let a=document.getElementById('address').value
+            let c=document.getElementById('city').value
+            let code=document.getElementById('pin').value
+            let cha=document.getElementById('char').value
+            let country=document.getElementById('coun').value
+            let male=document.getElementById('male').checked
+            let female=document.getElementById('female').checked
+            let draw=document.getElementById('drawing').checked
+            let sing=document.getElementById('sing').checked
+            let Dancing=document.getElementById('dance').checked
+            let sketching=document.getElementById('sketch').checked
+            if(n==""||l=="")
+            {
+                alert('enter data')
+            }
+            if(n.length>50||l.length>50)
+            {
+                alert ('max 50 characters are allowed')
+            }
+            if(e=="")
+            {
+                alert('enter a valid email id')
+            }
+            if(p.length<10)
+            {
+                alert('10 digits are must')
+                
+            }
+            if(d==""||a=="")
+            {
+                alert('enter data')
+            }
+            if(c.length>50)
+            {
+                alert('max 50 numbers allowed')
+            }
+            if(code.length>6)
+            {
+                alert('max 6 numbers are allowed')
+            }
+            if(cha.length>5)
+            {
+                alert('max 50 numbers are allowed')
+            }
+            if(country=="")
+            {
+                alert('enter your country name')
+            }
+            if(male==""||female=="")
+            {
+                alert('enter gender')
+            }
+           
+
+        }
+    </script>
+</head>
+<body>
+
+    <form action="" onsubmit="return validate()" style="background-color:red ;">
+        <label for="">Firstname</label>
+        <input type="text" name="" id="name">
+        <label for="">(max 50 characters allowed)</label>
+        <br>
+        <br>
+        <label for="">Lastname</label>
+        <input type="text" name="" id="last">
+        <label for="">(Max 50 characters allowed)</label>
+        <br><br>
+        <label for="">Email ID</label>
+        <input type="email" name="" id="mail">
+        <br><br>
+        <label for="">PhoneNumber</label>
+        <input type="text" name="" id="phone">
+        <label for="">(Max 10 digits required)</label>
+        <br><br>
+        <label for="">Gender</label>
+        <input type="radio" name="gender" id="male">
+        <label for="">Male</label>
+
+
+        <input type="radio" name="gender" id="female">
+        <label for="">Female</label>
+        <br><br>
+        <label for="">Date of Birth(DOB)</label>        
+        <input type="date" name="" id="dob">
+        <br><br>
+        <label for="">Address</label>
+        <input type="text" name="" id="">
+        <br><br>
+        <label for="">City</label>
+        <input type="text" name="" id="city">
+        <label for="">(Max 50 characters Allowed)</label>
+        <br><br>
+        <label for="">Pin code</label>
+        <input type="text" name="" id="pin">
+        <label for="">(Max 6 Numbers are allowed)</label>
+        <br><br>
+        <label for="">state</label>
+        <input type="text" name="" id="char">
+        <label for="">(Max 50 characters allowed</label>
+        <br><br>
+        <label for="">Country</label>
+        <input type="text" name="" id="coun">
+        <br><br>
+        <label for="">Hobbies</label>
+        <input type="checkbox" name="" id="drawing">
+        <label for="">Drawing</label>
+        <input type="checkbox" name="" id="sing">
+        <label for="">singing</label>
+        <input type="checkbox" name="" id="dance">
+        <label for="">Dancing</label>
+        <input type="checkbox" name="" id="sketch">
+        <label for="">sketching</label>
+        <br><br>
+        <input type="checkbox" name="" id="others">
+        <label for="">others</label>
+        <input type="text" name="" id="eg" placeholder="EX:Teaching">
+        <label for="">(Max 50 Characters allowed)</label>
+        <br><br>
+        Qualification:
+        <input type="checkbox" name="" id="10th">
+        <label for="">High School(10th)</label>
+        <br>
+        <input type="checkbox" name="" id="12th">
+        <label for="">Higher School(12th)</label>
+        <br><input type="checkbox" name="" id="bach">
+        <label for="">Graduation(Bachelors)</label>
+        <br><input type="checkbox" name="" id="pg">
+        <label for="">Post Graduation(Masters)</label>
+        <br>
+        <input type="checkbox" name="" id="phd">
+        <label for="">Phd</label>
+        <br>
+        Courses Applied for:
+        <input type="checkbox" name="" id="c1">
+        <label for="">BCA(Bachelor of Computer Applications</label>
+        <br>
+        <input type="checkbox" name="" id="c2">
+        <label for="">B.Com(Bachelor of Commerce)</label>
+        <br><input type="checkbox" name="" id="c3">
+        <label for="">B.Sc(Bachelor of science)</label>
+        <br>
+        <input type="checkbox" name="" id="c4">
+        <label for="">BA(Bachelor of Arts)</label>
+        <br><input type="checkbox" name="" id="c5">
+        <label for="">MCA(Master of Computer Applications)</label>
+        <br>
+        <input type="checkbox" name="" id="c5">
+        <label for="">M.Com(Master of Commerce)</label>
+        <br>
+        <input type="checkbox" name="" id="c6">
+        <label for="">M.sc(Master of science)</label>
+        <br>
+        <input type="checkbox" name="" id="c7">
+        <label for="">MA(Master of arts)</label>
+        <br>
+        <br>
+        <input type="submit" value="submit" id="sub">
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>

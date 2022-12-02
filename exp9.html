@@ -1,0 +1,45 @@
+<!--Experiment 9-->
+<!--Write a JavaScript to demonstrate DOM elements ,events.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>DOM elements and events</h3>
+    <div class="d1">DOM elements</div>
+    <p></p>
+    <div id="id1"></div>
+    <h1 class="fh1">this is a h1 tag</h1>
+    <h1 class="fh1">this is also a h1 tag with same class</h1>
+   <script defer>
+        let a=document.getElementsByClassName("d1")
+        document.write(a)
+        document.write("<br>")
+        let b=document.getElementsByTagName("p")
+        document.write(b)
+        document.write("<br>")
+        let c=document.getElementById("id1")
+        document.write(c)
+        document.write("<br>")
+        let d=document.querySelectorAll("h1.fh1")
+        document.write(d[0])
+        document.write("<br>")
+        document.wwrite(d[1])
+   </script> 
+   <h2>JavaScript HTML Events</h2>
+   <h2 onclick="this.innerHTML='Ooops!'">Click on this text!</h2>
+   <button onclick="displayDate()">The time is?</button>
+   <script>
+    function displayDate() {
+      document.getElementById("demo").innerHTML = Date();
+    }
+    </script>
+    
+    <p id="demo"></p>
+</body>
+</html>
